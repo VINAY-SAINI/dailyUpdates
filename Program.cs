@@ -314,5 +314,5 @@ Console.WriteLine(str);
 // {
 //   checkAge(15);
 // }
-   
+   // int d=12;
 // }
