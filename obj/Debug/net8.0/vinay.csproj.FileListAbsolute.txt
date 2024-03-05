@@ -1,0 +1,14 @@
+C:\Users\nidhi\Desktop\vinay\bin\Debug\net8.0\vinay.exe
+C:\Users\nidhi\Desktop\vinay\bin\Debug\net8.0\vinay.deps.json
+C:\Users\nidhi\Desktop\vinay\bin\Debug\net8.0\vinay.runtimeconfig.json
+C:\Users\nidhi\Desktop\vinay\bin\Debug\net8.0\vinay.dll
+C:\Users\nidhi\Desktop\vinay\bin\Debug\net8.0\vinay.pdb
+C:\Users\nidhi\Desktop\vinay\obj\Debug\net8.0\vinay.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nidhi\Desktop\vinay\obj\Debug\net8.0\vinay.AssemblyInfoInputs.cache
+C:\Users\nidhi\Desktop\vinay\obj\Debug\net8.0\vinay.AssemblyInfo.cs
+C:\Users\nidhi\Desktop\vinay\obj\Debug\net8.0\vinay.csproj.CoreCompileInputs.cache
+C:\Users\nidhi\Desktop\vinay\obj\Debug\net8.0\vinay.dll
+C:\Users\nidhi\Desktop\vinay\obj\Debug\net8.0\refint\vinay.dll
+C:\Users\nidhi\Desktop\vinay\obj\Debug\net8.0\vinay.pdb
+C:\Users\nidhi\Desktop\vinay\obj\Debug\net8.0\vinay.genruntimeconfig.cache
+C:\Users\nidhi\Desktop\vinay\obj\Debug\net8.0\ref\vinay.dll
