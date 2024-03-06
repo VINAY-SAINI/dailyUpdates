@@ -18,6 +18,31 @@ public class Subscriber
     }
 }
 }
+using System;
+
+public class Printer<T> where T : IComparable
+{
+    // Method to print the larger of two values
+    public void PrintLarger(T a, T b)
+    {
+        if (a.CompareTo(b) > 0)
+            Console.WriteLine($"Larger value: {a}");
+        else
+            Console.WriteLine($"Larger value: {b}");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Printer<int> intPrinter = new Printer<int>();
+        intPrinter.PrintLarger(10, 20); // Output: Larger value: 20
+
+        Printer<string> stringPrinter = new Printer<string>();
+        stringPrinter.PrintLarger("Apple", "Orange"); // Output: Larger value: Orange
+    }
+}
 
 using System;
 
