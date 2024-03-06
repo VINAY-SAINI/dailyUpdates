@@ -1,4 +1,4 @@
-﻿/*
+﻿
 using System;
 using System.IO;
 using System.Collections.Generic;
@@ -7,315 +7,370 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-*/
-// See https://aka.ms/new-console-template for more information
-/*Console.WriteLine("Hello, World!");
-string str = Console.ReadLine();
 
-Console.WriteLine(3 + 3);
+using System;
 
-Console.WriteLine(str);
-// */
-// int intValue = 10;
-// double doubleValue =32.32D;
-// float floatValue = 3223.22F;
-// bool boolVaue = true;
-// //  int a =20;
-//  string myText="!true";
-//  bool k = Convert.ToBoolean(myText);
-// // char letter ='s';
-// // int a = 12;
-// // a =14;
-// Console.WriteLine(k);
-// int testCase = 5;
-// do
-// {
-//     Console.WriteLine("Enter your rating between 1 and 5");
-//     int value = Convert.ToInt32(Console.ReadLine());
-//     Console.Write("you choose ");
-//     switch (value)
-//     {
-//         default:
-//             Console.WriteLine("kaam kro");
-//             break;
-//         case 1:
-//             Console.WriteLine("wrost rating");
-//             break;
-//         case 2:
-//             Console.WriteLine("Bad rating");
-//             break;
-//         case 3:
-//             Console.WriteLine("okay okay");
-//             break;
-//         case 4:
-//             Console.WriteLine("good");
-//             break;
-//         case 5:
-//             Console.WriteLine("Best");
-//             break;
-//         case 9:
-//             Console.WriteLine("bye bye");
-//             testCase=-1;
-//             break;
-//             // default:
-//             //     Console.WriteLine("kaam kro");
-//             //     break;
-//     }
-// }
-// while (testCase-- > 0);
-// int printTriangle =5;
-// for(int i =0;i<printTriangle;i++)
-// {
-//     for(int k =0;k<i;k++)
-//     {
-//         Console.Write(" ");
-//     }
-//     for(int j=0;j<=printTriangle;j++)
-//     {
-//         Console.Write("*");
-//         Console.Write(" ");
-//     }
-//     Console.WriteLine();
-// }
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Syntax and Output Examples
+        Console.WriteLine("Hello, World!");
 
-//  int [] arr = new int [5];
-//  foreach(int val in arr){
-//     Console.Write($"{val} ");
-//  }
-//  Console.WriteLine();
-// // for(int i=0;i<arr.Length;i++)
-// // {
-// //     arr[i]=i*2 + i%2;
-// // }
-// // foreach(int val in arr)
-// // {
-// //     Console.Write($"{val} ");
-// // }
-// string [] strArr = new string[7];
-// foreach(string val in strArr)
-// {
-//     Console.Write($"{val} ");
-// }
-// Console.WriteLine();
-// for(int i=0;i<strArr.Length;i++)
-// {
-//     if(i==3)
-//     {
-//         continue;
-//     }
-//     strArr[i]=Convert.ToString(i*2 + i%2);
-// }
-// foreach(string val in strArr)
-// {
-//     Console.Write($"{val} ");
-// // }
-// string [] arr ;
-// arr={"a","b","c"};
-// arr[3]="s";
+        // User Input Example
+        Console.WriteLine("Enter a string:");
+        string str = Console.ReadLine();
+        Console.WriteLine("You entered: " + str);
 
-// int [] arr = new int []{1,3,63,256,2,1,3,542,7,214,52,4};
-// foreach(int val in arr)
-// {
-//     Console.Write($"{val} ");
-// }
-// Console.WriteLine();
+        // Arithmetic Operations Example
+        Console.WriteLine(3 + 3);
 
-// Array.Sort(arr);
-// foreach(int val in arr)
-// {
-//     Console.Write($"{val} ");
-// }
-// Console.WriteLine();
-// Console.WriteLine(arr.Max());
-// int[,] numbers = { {1, 4, 2}, {3, 6, 8} };
+        // Variables and Data Types Examples
+        int intValue = 10;
+        double doubleValue = 32.32D;
+        float floatValue = 3223.22F;
+        bool boolValue = true;
 
-// foreach (int i in numbers)
-// {
-//   Console.WriteLine(i);
-// } 
-// int [,] arr =
-// {
-//     {1,3,5},
-//     {23,2,32}
-// };
-// Console.WriteLine(arr.GetLength(3));
-//Program2.Main();
-// class PrintTriangle
-// {
-//     public string shapeName;
-//     public int random;
-//     public PrintTriangle(string shapeName, int random)
-//     {
-//         this.shapeName = shapeName;
-//         this.random = random;
-//     }
-//     public static void Triangle(int val = 3)
-//     {
-//         for (int i = 0; i < val; i++)
-//         {
-//             for (int k = 0; k < i; k++)
-//             {
-//                 Console.Write(" ");
-//             }
-//             for (int j = 0; j <= val; j++)
-//             {
-//                 Console.Write("*");
-//                 Console.Write(" ");
-//             }
-//             Console.WriteLine();
-//         }
-//     }
-// }
-// class Shape
-// {
+        // Casting Examples
+        doubleValue = intValue; // Implicit Casting
+        intValue = (int)doubleValue; // Explicit Casting
 
-//     public static void Main(string[] args)
-//     {
+        // Boolean Operations Example
+        string myText = "true";
+        bool k = Convert.ToBoolean(myText);
+        Console.WriteLine(k);
 
-//         // PrintTriangle shape = new PrintTriangle("square", 5);
-//         // PrintTriangle.Triangle(5);
-//         // PrintTriangle.Triangle();
-//         // Console.WriteLine(shape.random);
-//         // Console.WriteLine(shape.shapeName);
-//         Person person1 = new Person();
-//         person1.Name = "vinay";
-//         Console.WriteLine(person1.Name);
-//     }
-// }
-// class Person
-// {
-//     private string name = " ";
-//     public string Name
-//     {
-//         get { return name; }
-//         set { name = value; }
-//     }
-// }
+        // Control Structures Examples
+        // If-Else Example
+        int rating;
+        Console.WriteLine("Enter your rating between 1 and 5");
+        rating = Convert.ToInt32(Console.ReadLine());
+        Console.Write("You choose: ");
+        switch (rating)
+        {
+            case 1:
+                Console.WriteLine("Worst rating");
+                break;
+            case 2:
+                Console.WriteLine("Bad rating");
+                break;
+            case 3:
+                Console.WriteLine("Okay rating");
+                break;
+            case 4:
+                Console.WriteLine("Good rating");
+                break;
+            case 5:
+                Console.WriteLine("Best rating");
+                break;
+            default:
+                Console.WriteLine("Invalid rating");
+                break;
+        }
 
+        // Looping Structures Examples
+        // For Loop Example
+        int printTriangle = 5;
+        for (int i = 0; i < printTriangle; i++)
+        {
+            for (int k = 0; k < i; k++)
+            {
+                Console.Write(" ");
+            }
+            for (int j = 0; j <= printTriangle; j++)
+            {
+                Console.Write("* ");
+            }
+            Console.WriteLine();
+        }
 
+        // Arrays Examples
+        // 1D Array Example
+        int[] arr = new int[] { 1, 3, 63, 256, 2, 1, 3, 542, 7, 214, 52, 4 };
+        Array.Sort(arr);
+        foreach (int val in arr)
+        {
+            Console.Write($"{val} ");
+        }
+        Console.WriteLine();
 
+        // 2D Array Example
+        int[,] numbers = { { 1, 4, 2 }, { 3, 6, 8 } };
+        foreach (int i in numbers)
+        {
+            Console.WriteLine(i);
+        }
 
-// sealed class Vehicle  // base class (parent) 
-// {
-//   public string brand = "Ford";  // Vehicle field
-//   public void honk()             // Vehicle method 
-//   {                    
-//     Console.WriteLine("Tuut, tuut!");
-//   }
-// }
+        // Classes and Objects Example
+        // Creating a Person object
+        Person person1 = new Person();
+        person1.Name = "Vinay";
+        Console.WriteLine(person1.Name);
+    }
+}
 
-// class Car : Vehicle  // derived class (child)
-// {
-//   public string modelName = "Mustang";  // Car field
-// }
+// Class representing a Person
+class Person
+{
+    private string name = " "; // Field
 
-// class Program
-// {
-//   static void Main(string[] args)
-//   {
-//     // Create a myCar object
-//     Car myCar = new Car();
+    // Property for accessing and setting the name field
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+}
 
-//     // Call the honk() method (From the Vehicle class) on the myCar object
-//     myCar.honk();
+using System;
 
-//     // Display the value of the brand field (from the Vehicle class) and the value of the modelName from the Car class
-//     Console.WriteLine(myCar.brand + " " + myCar.modelName);
-//   }
-//}
+class Program
+{
+    static void Main(string[] args)
+    {
+        // More C# Topics Examples
 
-// abstract class Animal
-// {
-//     // Abstract method (does not have a body)
-//     public abstract void animalSound();
-//     // Regular method
-//     public void sleep()
-//     {
-//         Console.WriteLine("Zzz");
-//     }
-// }
+        // Constants Example
+        const int constantValue = 100;
+        Console.WriteLine("Constant value: " + constantValue);
 
-// // Derived class (inherit from Animal)
-// class Pig : Animal
-// {
-//     public new void sleep()
-//     {
-//         Console.WriteLine("pigzzzzz");
-//     }
-//     public override void animalSound()
-//     {
-//         // The body of animalSound() is provided here
-//         Console.WriteLine("The pig says: wee wee");
-//     }
-// }
+        // Break and Continue Example
+        for (int i = 0; i < 10; i++)
+        {
+            if (i == 5)
+                continue; // Skip printing 5
+            Console.WriteLine(i);
+            if (i == 7)
+                break; // Exit loop at 7
+        }
 
-// class Program
-// {
-//     static void Main(string[] args)
-//     {
-//         Pig myPig = new Pig(); // Create a Pig object
-//         myPig.animalSound();  // Call the abstract method
-//         myPig.sleep();  // Call the regular method
-//     }
-// }
-// interface Animal 
-// {
-//   void animlkalSound(); // interface method (does not have a body)
-//   void run(); // interface method (does not have a body)
-// }
+        // Multidimensional Array Example
+        int[,] multiArray = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
+        for (int i = 0; i < 2; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                Console.Write(multiArray[i, j] + " ");
+            }
+            Console.WriteLine();
+        }
 
+        // Jagged Array Example
+        int[][] jaggedArray = new int[3][];
+        jaggedArray[0] = new int[] { 1, 2, 3 };
+        jaggedArray[1] = new int[] { 4, 5 };
+        jaggedArray[2] = new int[] { 6, 7, 8, 9 };
+        foreach (int[] row in jaggedArray)
+        {
+            foreach (int num in row)
+            {
+                Console.Write(num + " ");
+            }
+            Console.WriteLine();
+        }
 
-// interface IFirstInterface 
-// {
-//   void myMethod(); // interface method
-// }
+        // Enum Example
+        enum Days { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
+        Days today = Days.Wednesday;
+        Console.WriteLine("Today is: " + today);
 
-// interface ISecondInterface 
-// {
-//   void myOtherMethod(); // interface method
-// }
+        // Exception Handling Example
+        try
+        {
+            int[] numbers = { 1, 2, 3 };
+            Console.WriteLine(numbers[5]); // Accessing out of bounds
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("An error occurred: " + ex.Message);
+        }
 
-// // Implement multiple interfaces
-// class DemoClass : IFirstInterface, ISecondInterface 
-// {
-//   public void myMethod() 
-//   {
-//     Console.WriteLine("Some text..");
-//   }
-//   public void myOtherMethod() 
-//   {
-//     Console.WriteLine("Some other text...");
-//   }
-// }
+        // Abstract Class Example
+        // Animal animal = new Animal(); // Cannot instantiate abstract class
+        Dog dog = new Dog();
+        dog.AnimalSound();
 
-// class Program 
-// {
-//   static void Main(string[] args)
-//   {
-//     DemoClass myObj = new DemoClass();
-//     myObj.myMethod();
-//     myObj.myOtherMethod();
-//   }
+        // Interface Example
+        Dog myDog = new Dog();
+        myDog.AnimalSound();
+        myDog.Run();
+    }
+}
 
+// Abstract Class Example
+abstract class Animal
+{
+    public abstract void AnimalSound();
+}
 
-// static void checkAge(int age)
-// {
-//   if (age < 18)
-//   {
-//     throw new ArithmeticException("Access denied - You must be at least 18 years old.");
-//   }
-//   else
-//   {
-//     Console.WriteLine("Access granted - You are old enough!");
-//   }
-// }
+class Dog : Animal, IRunnable
+{
+    public override void AnimalSound()
+    {
+        Console.WriteLine("The dog says: Woof");
+    }
 
-// static void Main(string[] args)
-// {
-//   checkAge(15);
-// }
-// int d=12;
-// }
+    public void Run()
+    {
+        Console.WriteLine("The dog is running");
+    }
+}
+
+// Interface Example
+interface IRunnable
+{
+    void Run();
+}
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // More C# Topics Examples
+
+        // Properties Example
+        Person person = new Person();
+        person.Name = "John"; // Setting the name using the property
+        Console.WriteLine("Name: " + person.Name); // Getting the name using the property
+
+        // Static Members Example
+        Console.WriteLine("Number of persons: " + Person.Count); // Accessing static member
+
+        // Inheritance Example
+        Student student = new Student();
+        student.Name = "Alice";
+        student.Age = 20;
+        student.Display(); // Calling method from the base class
+
+        // Polymorphism Example
+        Animal animal;
+        animal = new Dog();
+        animal.MakeSound(); // Calls the method from Dog class
+        animal = new Cat();
+        animal.MakeSound(); // Calls the method from Cat class
+
+        // Constructor Overloading Example
+        Employee employee1 = new Employee(); // Using default constructor
+        Employee employee2 = new Employee("John", 30); // Using parameterized constructor
+
+        // Method Overriding Example
+        Shape shape = new Rectangle();
+        shape.Draw(); // Calls the Draw method of Rectangle class
+        shape = new Circle();
+        shape.Draw(); // Calls the Draw method of Circle class
+    }
+}
+
+// Properties Example
+class Person
+{
+    private string name;
+
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+}
+
+// Static Members Example
+class Person
+{
+    public static int Count = 0;
+
+    public Person()
+    {
+        Count++; // Increment count for each object created
+    }
+}
+
+// Inheritance Example
+class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    public void Display()
+    {
+        Console.WriteLine("Name: " + Name);
+        Console.WriteLine("Age: " + Age);
+    }
+}
+
+class Student : Person
+{
+    // Inherits Name and Age properties and Display method
+}
+
+// Polymorphism Example
+class Animal
+{
+    public virtual void MakeSound()
+    {
+        Console.WriteLine("Animal makes a sound");
+    }
+}
+
+class Dog : Animal
+{
+    public override void MakeSound()
+    {
+        Console.WriteLine("Dog barks");
+    }
+}
+
+class Cat : Animal
+{
+    public override void MakeSound()
+    {
+        Console.WriteLine("Cat meows");
+    }
+}
+
+// Constructor Overloading Example
+class Employee
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    public Employee()
+    {
+        Console.WriteLine("Default constructor called");
+    }
+
+    public Employee(string name, int age)
+    {
+        Name = name;
+        Age = age;
+        Console.WriteLine("Parameterized constructor called");
+    }
+}
+
+// Method Overriding Example
+class Shape
+{
+    public virtual void Draw()
+    {
+        Console.WriteLine("Drawing shape");
+    }
+}
+
+class Rectangle : Shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("Drawing rectangle");
+    }
+}
+
+class Circle : Shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("Drawing circle");
+    }
+}
 
 
 
