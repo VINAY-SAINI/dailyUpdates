@@ -314,5 +314,22 @@ Console.WriteLine(str);
 // {
 //   checkAge(15);
 // }
-   // int d=12;
+// int d=12;
 // }
+
+
+
+//------------------------------------------------------------------
+//Delegated
+namespace file1
+{
+   class Opener
+   {
+      public static void Main(string[] args)
+      {
+         Publisher publisher = new Publisher();
+         SomethingWillHappened sh = publisher.sum;
+         sh += publisher.substract;
+      }
+   }
+}

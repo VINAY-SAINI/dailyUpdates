@@ -36,7 +36,7 @@ c# objects
 c# constructors
 c# access modier(still facing issue in namespace and assembly understanding)
 C# properties 
-  -getter,setter
+    -getter,setter
 c# inheritence and types
 c# polymorphism 
 c# abstraction
