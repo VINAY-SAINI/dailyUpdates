@@ -18,3 +18,67 @@ public class Subscriber
     }
 }
 }
+
+using System;
+
+// A generic class to represent a simple stack
+public class Stack<T>
+{
+    private T[] elements;
+    private int top;
+
+    public Stack(int capacity)
+    {
+        elements = new T[capacity];
+        top = -1;
+    }
+
+    public void Push(T item)
+    {
+        if (top == elements.Length - 1)
+        {
+            Console.WriteLine("Stack overflow");
+            return;
+        }
+        elements[++top] = item;
+    }
+
+    public T Pop()
+    {
+        if (top == -1)
+        {
+            Console.WriteLine("Stack underflow");
+            return default(T);
+        }
+        return elements[top--];
+    }
+
+    public void Display()
+    {
+        Console.WriteLine("Stack elements:");
+        for (int i = top; i >= 0; i--)
+        {
+            Console.WriteLine(elements[i]);
+        }
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Creating a stack of integers
+        Stack<int> intStack = new Stack<int>(5);
+        intStack.Push(10);
+        intStack.Push(20);
+        intStack.Push(30);
+        intStack.Display(); // Output: 30, 20, 10
+
+        // Creating a stack of strings
+        Stack<string> stringStack = new Stack<string>(3);
+        stringStack.Push("One");
+        stringStack.Push("Two");
+        stringStack.Push("Three");
+        stringStack.Display(); // Output: Three, Two, One
+    }
+}
