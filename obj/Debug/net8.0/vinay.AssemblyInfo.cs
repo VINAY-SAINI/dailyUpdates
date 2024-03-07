@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("vinay")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8edfefafc1187d95ca2f462a883012e038aef260")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81590c24819f159fcbf5a77d4b95284b4c941490")]
 [assembly: System.Reflection.AssemblyProductAttribute("vinay")]
 [assembly: System.Reflection.AssemblyTitleAttribute("vinay")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

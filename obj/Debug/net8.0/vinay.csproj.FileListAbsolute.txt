@@ -12,3 +12,4 @@ C:\Users\nidhi\Desktop\vinay\obj\Debug\net8.0\refint\vinay.dll
 C:\Users\nidhi\Desktop\vinay\obj\Debug\net8.0\vinay.pdb
 C:\Users\nidhi\Desktop\vinay\obj\Debug\net8.0\vinay.genruntimeconfig.cache
 C:\Users\nidhi\Desktop\vinay\obj\Debug\net8.0\ref\vinay.dll
+C:\Users\nidhi\Desktop\vinay\obj\Debug\net8.0\vinay.sourcelink.json

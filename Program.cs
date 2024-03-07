@@ -1,4 +1,4 @@
-﻿
+﻿/*
 using System;
 using System.IO;
 using System.Collections.Generic;
@@ -388,3 +388,20 @@ namespace file1
       }
    }
 }
+*/
+using System;
+using MyProject;
+
+namespace MyProject
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            A a = new A();
+            // A.OnEventDelegate od = a.fun1;
+            a.fun1(2,4);
+        }
+    }
+}
+
